@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from modeling_you.routes import public
+from modeling_you.routes import profile, public
 
 app = FastAPI(
     title="Modeling you service",
@@ -11,3 +11,4 @@ app = FastAPI(
 )
 
 app.include_router(router=public.router)
+app.include_router(router=profile.router)
