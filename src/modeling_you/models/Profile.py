@@ -13,7 +13,7 @@ class BasicInfo(BaseModel):
     level: str
     goal: List[str]
     native_language: str
-    preffered_practice_time: str
+    preferred_practice_time: str
 
 
 class Preference(BaseModel):
